@@ -218,7 +218,6 @@ html{
 	/*background-image: url('../assets/AWANDA_2189.jpg');*/
 	width: 100%;
 	height: 100vh;
-	object-position: -800% 50%;
 	opacity: 1.8;
 	z-index: 1;
 	position: absolute;

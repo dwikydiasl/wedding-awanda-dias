@@ -50,6 +50,9 @@ html{
 .scrolled .menu ul li a.active{
 	color: #FC5473 !important;
 }
+.scrolled .button_container span {
+	background: #fff;
+}
 .humberger-menu{
 	display: none;
 }
@@ -71,11 +74,11 @@ html{
 .button_container.active .top {
 	-webkit-transform: translateY(11px) translateX(0) rotate(45deg);
 	transform: translateY(11px) translateX(0) rotate(45deg);
-	background: #111;
+	background: #fff;
 }
 .button_container.active .middle {
 	opacity: 0;
-	background: #111;
+	background: #fff;
 }
 .button_container.active .bottom {
 	-webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);

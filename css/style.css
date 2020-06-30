@@ -315,14 +315,14 @@ html{
 }
 
 @keyframes fade-in {
-    from {opacity: 0; transform: scale(.7,.7)}
-    to {opacity: 1;}
+	from {opacity: 0; transform: scale(.7,.7)}
+	to {opacity: 1;}
 }
 .fade-in-element {
-  animation: fade-in 1.4s;
+	animation: fade-in 1.4s;
 }
 .hidden {
-  opacity: 0;
+	opacity: 0;
 }
 
 
@@ -338,6 +338,9 @@ html{
 		right: 40px;
 	}
 	#home{
+		height: 70vh;
+	}
+	.bg-img img{
 		height: 70vh;
 	}
 	.page-home{
@@ -376,6 +379,9 @@ html{
 		right: 40px;
 	}
 	#home{
+		height: 70vh;
+	}
+	.bg-img img{
 		height: 70vh;
 	}
 	.page-home{

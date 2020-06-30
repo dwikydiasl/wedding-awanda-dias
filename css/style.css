@@ -337,12 +337,6 @@ html{
 	.button_container {
 		right: 40px;
 	}
-	#home{
-		height: 70vh;
-	}
-	.bg-img img{
-		height: 70vh;
-	}
 	.page-home{
 		padding-top: 150px;
 	}
@@ -377,12 +371,6 @@ html{
 	}
 	.button_container {
 		right: 40px;
-	}
-	#home{
-		height: 70vh;
-	}
-	.bg-img img{
-		height: 70vh;
 	}
 	.page-home{
 		padding-top: 180px;

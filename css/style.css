@@ -56,6 +56,7 @@ html{
 .logo h1{
 	font-weight: 800;
 	color: #fff;
+	font-family: 'Damion', cursive;
 }
 .header{
 	padding: 20px 0;
@@ -290,14 +291,14 @@ html{
 
 /*====== ABOUT ======*/
 #about{
-	height: 100vh;
-	padding: 80px 0;
+	height: 100%;
+	padding: 80px 0 20px 0;
 }
 
 /*====== SCHEDULE ======*/
 #schedule{
 	height: 100%;
-	padding: 80px 0;
+	padding: 80px 0 20px 0;
 }
 .title-section h1{
 	font-weight: 700;
@@ -313,7 +314,7 @@ html{
     background: #FFB6C1;
 }
 .page-schedule{
-	margin-top: 100px;
+	margin-top: 70px;
 }
 .title-schedule{
 	font-weight: 600;
@@ -413,9 +414,6 @@ html{
 		font-size: 28px;
 
 	}
-	#schedule{
-		margin-top: 250px;
-	}
 	.box-schedule{
 		margin-bottom: 30px;
 	}
@@ -451,9 +449,6 @@ html{
 	}
 	.title-section h1{
 		font-size: 28px;
-	}
-	#schedule{
-		margin-top: 50px;
 	}
 	.box-schedule{
 		margin-bottom: 30px;

@@ -55,6 +55,7 @@ html{
 }
 .logo h1{
 	font-weight: 800;
+	color: #fff;
 }
 .header{
 	padding: 20px 0;
@@ -65,7 +66,7 @@ html{
 }
 .menu ul li a{
 	font-weight: 400;
-	color: #111;
+	color: #fff;
 }
 .menu ul li a.active{
 	font-weight: 600;
@@ -247,6 +248,15 @@ html{
 
 /*---------------------------*/
 
+.pink{
+	color: #FFB6C1;
+}
+.white{
+	color:#fff;
+}
+
+/*---------------------------*/
+
 /*====== HOME ======*/
 #home{
 	height: 100vh;
@@ -260,6 +270,7 @@ html{
 	z-index: 1;
 	position: absolute;
 	object-fit: cover;
+	  filter: brightness(30%); 
 }
 .page-home{
 	padding-top: 180px;
@@ -269,11 +280,13 @@ html{
 .title-time span{
 	padding: 0 15px;
 	border: 2px solid #bdbdbd;
+	color: #bdbdbd;
 }
 .headline-text-home h1{
 	font-weight: 900;
 	text-transform: uppercase;
 	font-size: 52px;
+	line-height: 50px;
 }
 
 /*====== ABOUT ======*/
@@ -291,6 +304,14 @@ html{
 	font-weight: 700;
 	font-size: 52px;
 	color: #FFB6C1;
+}
+.line-section{
+	margin: auto;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    width: 75px;
+    height: 5px;
+    background: #FFB6C1;
 }
 .page-schedule{
 	margin-top: 100px;

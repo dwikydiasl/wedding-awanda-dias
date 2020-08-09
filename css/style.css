@@ -269,7 +269,7 @@ html{
 	z-index: 1;
 	position: absolute;
 	object-fit: cover;
-	  filter: brightness(30%); 
+	  filter: brightness(40%); 
 }
 .page-home{
 	padding-top: 180px;

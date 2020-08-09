@@ -1,3 +1,44 @@
+//loading page
+function onReady(callback) {
+  var intervalID = window.setInterval(checkReady, 1500);
+  function checkReady() {
+    if (document.getElementsByTagName('body')[0] !== undefined) {
+      window.clearInterval(intervalID);
+      callback.call(this);
+    }
+  }
+}
+function show(id, value) {
+  document.getElementById(id).style.display = value ? 'block' : 'none';
+}
+onReady(function () {
+  show('landing-page', true);
+  show('loading', false);
+});
+
+//progress bar
+window.onload = function(event) {
+   if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 15);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+    }
+  }
+};
+var i = 0;
+function move() {
+
+}
+
 // Header scroll
 $(function() {
   var header = $(".header");

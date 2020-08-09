@@ -4,7 +4,44 @@ body{
 html{
 	scroll-behavior: smooth;
 }
-
+#landing-page {
+	display: none;
+}
+#loading {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 106;
+	width: 100vw;
+	height: 100vh;
+	background-color:#fff;
+	/*background-image: url('../assets/Ellipsis-1.3s-230px.gif');*/
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#myProgress {
+	width: 200px;
+	background-color: #fff;
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#myBar {
+	width: 0%;
+	height: 2px;
+	background-color: #111;
+}
+.img-loading{
+	height: 400px;
+	width: 500px;
+	position: fixed; 
+	top: 40%;
+	left: 50%;
+	z-index: 105;
+	transform: translate(-50%, -50%);
+}
 /*====== HEADER ======*/
 #header{
 	position: fixed;

@@ -399,9 +399,6 @@ html{
 		height: 250px;
 		width: 300px;
 	}
-	#home{
-		height: 100vh;
-	}
 	.page-home{
 		padding-top: 350px;
 	}
@@ -415,6 +412,9 @@ html{
 	.title-section h1{
 		font-size: 28px;
 
+	}
+	#schedule{
+		margin-top: 250px;
 	}
 	.box-schedule{
 		margin-bottom: 30px;
@@ -439,9 +439,6 @@ html{
 	.button_container {
 		right: 20px;
 	}
-	#home{
-		height: 100vh;
-	}
 	.page-home{
 		padding-top: 380px;
 	}
@@ -454,6 +451,9 @@ html{
 	}
 	.title-section h1{
 		font-size: 28px;
+	}
+	#schedule{
+		margin-top: 50px;
 	}
 	.box-schedule{
 		margin-bottom: 30px;

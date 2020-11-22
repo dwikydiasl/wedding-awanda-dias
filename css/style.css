@@ -506,6 +506,14 @@ html{
 		margin-bottom: 30px;
 	}
 }
+@media (min-width: 1441px)  {
+	.img-gallery2 img{
+		max-height: 700px;
+	}
+	.gallery-left img{
+		max-height: 700px;
+	}
+}
 @media (min-width: 576px) and (max-width: 768px) {
 
 }

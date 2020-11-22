@@ -516,6 +516,15 @@ html{
 	.img-right{
 		height: 340px !important;
 	}
+	.title-time span{
+		padding: 0 15px;
+		border: 2px solid #bdbdbd;
+		color: #bdbdbd;
+	}
+	.headline-text-home h1{
+		font-size: 82px;
+		line-height: 80px;
+	}
 }
 @media (min-width: 576px) and (max-width: 768px) {
 

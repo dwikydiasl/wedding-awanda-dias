@@ -391,7 +391,7 @@ html{
 }
 #gallery img{
 	border-radius: 10px;
-	object-position: center;
+	object-position: top;
 	object-fit: cover;
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
@@ -481,7 +481,7 @@ html{
 		right: 20px;
 	}
 	.page-home{
-		padding-top: 380px;
+		padding-top: 450px;
 	}
 	.title-time{
 		font-size: 12px;

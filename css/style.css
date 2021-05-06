@@ -24,7 +24,7 @@ html{
 	background-position: center;
 }
 #myProgress {
-	width: 200px;
+	width: 20rem;
 	background-color: #fff;
 	position: absolute;
 	top: 80%;
@@ -60,6 +60,7 @@ html{
 	font-weight: 800;
 	color: #fff;
 	font-family: 'Sacramento', cursive;
+	padding-top: 10px;
 }
 .header{
 	padding: 20px 0;
@@ -316,7 +317,7 @@ html{
 	margin-top: 5px;
 	margin-bottom: 40px;
 	width: 75px;
-	height: 5px;
+	height: 3px;
 	background: #FFB6C1;
 }
 .page-schedule{

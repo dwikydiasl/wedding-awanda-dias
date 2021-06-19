@@ -44,7 +44,7 @@ nav.find('a').on('click', function () {
 
   $('html, body').animate({
     scrollTop: $(id).offset().top - nav_height
-  }, 700);
+  }, 500);
 
   return false;
 });
@@ -69,7 +69,7 @@ window.onload = function(event) {
 };
 var i = 0;
 function move() {
-
+ show('landing-page', true);
 }
 
 // Header scroll

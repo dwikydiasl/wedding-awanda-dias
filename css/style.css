@@ -348,6 +348,13 @@ html{
 .desc-schedule{
 	font-weight: 300px;
 }
+.page-schedule address {
+    margin-top: -17px !important;
+}
+.page-schedule address a{
+    text-decoration: underline !important;
+    color: #111 !important;
+}
 .img-schedule{
 	height: 100px;
 	width: 100px;
@@ -635,6 +642,7 @@ html{
     position: relative;
     z-index: 2;
     background: #fff;
+    padding-top: 16px;
 }
 .copyright p{
 	font-size: 14px;
@@ -678,6 +686,55 @@ html{
     display: flex;
     align-items: center;
     bottom: 3rem;
+}
+#protocol{
+	background-color: #FFF9F4;
+	height: 100%;
+    padding: 80px 0;
+    position: relative;
+    z-index: 2;
+}
+#protocol h4{
+	    text-align: center;
+}
+#protocol ul{
+	display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 50px;
+    margin-left: 0px;
+}
+#protocol ul li {
+    display: block;
+    flex: 0 1 50%;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.img-protocol {
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.img-protocol img {
+    max-width: 150px;
+    justify-content: center;
+    margin: 0 auto;
+}
+.desc-protocol {
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 75%;
+}
+@media(max-width: 600px){
+	#protocol ul li {
+	    display: contents;
+	    flex: 0 1 50%;
+	}
+	.desc-protocol {
+	    max-width: 100%;
+	}
 }
 /*Responsive*/
 @media (min-width: 120px) and (max-width: 320px) {

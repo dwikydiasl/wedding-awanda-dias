@@ -32,8 +32,9 @@
 		</div>
 
 	</div>
-	
-
+	<audio autoplay>
+	  	<source src="assets/music.mp4" type="audio/wav" />
+	</audio>
 	<div id="landing-page">
 		<div id="header" class="header">
 			<div class="container-fluid">
@@ -296,6 +297,50 @@
 				
 			</div>
 		</section >
+
+		<section id="information">
+			<div class="container">
+				<div class="box-card">
+					<h5>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kedua mempelai. Atas kehadiran serta doa restu, kami ucapkan terima kasih.
+						<br><br>
+						UNTUK YANG BERHALANGAN HADIR, KAMI TAMBAHKAN FITUR DIBAWAH INI
+					</h5>
+					<div class="body-card">
+						<button type="button" class="btn btn-modal" data-toggle="modal" data-target="#exampleModal">
+						  <i class="fas fa-home"></i> Kirim Kado
+						</button>
+
+						<a href="https://www.instagram.com/" type="button" class="btn btn-modal" d>
+						  <i class="fab fa-instagram"></i> Live
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-lg modal-dialog-centered">
+		    <div class="modal-content">
+		      	<div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+		      	</div>
+		      	<div class="modal-body">
+		        	<h1>Kirim Kado</h1>
+		        	<h5>
+		        		Jl Pojok Dua, Munggut, Wungu, Madiun, Jawa Timur<br>
+						08234324<br>
+						Penerima: Awanda
+		        	</h5>
+		        	<p>Silahkan copy Alamat Mempelai dibawah ini:</p>
+		        	<input type="text" value="Jl Pojok Dua, Munggut, Wungu, Madiun, Jawa Timur" id="myInput">
+					<button onclick="coptText()">Copy text</button>
+		      	</div>
+		    </div>
+		  </div>
+		</div>
 			
 		<section id="protocol">
 			<div class="container">

@@ -454,11 +454,10 @@ html{
 	}
 }
 .text-about h2{
-    font-size: 25px;
+    font-size: 32px;
 }
 .text-about p{
-	font-family: 'Sacramento', cursive;
-    font-size: 30px;
+    font-size: 24px;
 }
 .countdown{
 	text-align: center;
@@ -687,6 +686,72 @@ html{
     display: flex;
     align-items: center;
     bottom: 3rem;
+}
+#information{
+	background-color: #fff;
+	height: 100%;
+    padding: 80px 0;
+    position: relative;
+    z-index: 2;
+}
+.body-card {
+    text-align: center;
+    margin-top: 20px;
+}
+.box-card{
+	background: #FFB6C1;
+	border-radius: 5px;
+    box-shadow: 0 0 15px rgb(0 0 0 / 30%);
+    padding: 50px;
+}
+.box-card h5{
+	text-align: center;
+	color: #fff;
+}
+.modal-body{
+	text-align: center;
+	padding: 50px 0 !important;
+}
+.modal-body h1{
+	 margin-top: -75px;
+}
+.modal-body h5{
+	    margin-top: 25px; 
+}
+.modal-content {
+    border-radius: 0 !important;
+}
+.modal-header {
+    border: 0 !important;
+}
+button.btn.btn-modal {
+    background-color: #fff;
+    border-radius: 0;
+    width: 150px;
+    margin: 0 10px;
+}
+a.btn.btn-modal{
+	    background-color: #fff;
+    border-radius: 0;
+    width: 150px;
+    margin: 0 10px;
+}
+button.btn.btn-modal:focus {
+    box-shadow: 0 0 0;
+}
+button.btn.btn-modal:hover {
+    box-shadow: 0 0 15px rgb(0 0 0 / 30%);
+}
+.modal-body button {
+    background-color: #bdbdbd;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    padding: 2px 10px;
+}
+.modal-body input#myInput {
+    border: 1px solid #bdbdbd;
+    padding-left: 10px;
 }
 #protocol{
 	background-color: #FFF9F4;

@@ -728,13 +728,13 @@ button.btn.btn-modal {
     background-color: #fff;
     border-radius: 0;
     width: 150px;
-    margin: 0 10px;
+    margin: 0 10px 20px 10px;
 }
 a.btn.btn-modal{
 	    background-color: #fff;
     border-radius: 0;
     width: 150px;
-    margin: 0 10px;
+    margin: 0 10px 20px 10px;
 }
 button.btn.btn-modal:focus {
     box-shadow: 0 0 0;

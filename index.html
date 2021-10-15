@@ -14,7 +14,7 @@
 	<!-- Font Style -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&family=Damion:500,600,700,800&family=Sacramento&family=Raleway:wght@300;400&family=Kaushan+Script&display=swap&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Sacramento&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Sacramento&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<!-- Fontawesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -25,7 +25,7 @@
 </head>
 <body>
 	<audio autoplay>
-	  <source src="assets/music.mp4" type="audio/wav" />
+		<source src="assets/music.mp4" type="audio/wav" AutoplayAllowed/>
 	</audio>
 	<div id="loading">
 		<img src="assets/loading.png" class="img-loading">
@@ -90,24 +90,40 @@
 		</div>
 
 		<section id="home" class="home">
-			<div class="bg-img"> <img src="assets/IMG-20201110-WA0024.jpg"></div>
+			<!-- <div class="bg-img"> <img src="assets/TRH00531.jpg"></div> -->
+			<div id="carouselExampleSlidesOnly" class="bg-img  carousel slide carousel-fade" data-touch="true" data-ride="carousel">
+				<div class="carousel-inner ">
+					<div class="carousel-item active">
+						<img src="assets/TRH00531.jpg" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="assets/IMG-20201110-WA0024.jpg" class="d-block w-100" alt="...">
+					</div>
+				</div>
+			</div>
 			<div class="container-fluid">
 				<div class="page-home">
-					<div class="title-time mb-3">
-						<span>Madiun, 19 September 2021 </span>
+					<!-- <div class="title-time mb-3">
+						<span>Madiun, 20 NNovember 2021 </span>
 					</div>
 					<div class="headline-text-home">
 						<h1 class="pink">
 							AWANDA & DIAS 
 						</h1>
 						<h1 class="white">
-							ARE GETTING 
+							WEDDING CEREMONY
 						</h1>
 						<h1 class="white">
-							MARRIED
+							Invitation
 						</h1>
-					</div>
+					</div> -->
 				</div>
+			</div>
+			<div class="scroll-downs">
+				<div class="mousey">
+					<div class="scroller"></div>
+				</div>
+				<a href="#about">Scroll down</a>
 			</div>
 		</section>
 
@@ -185,13 +201,13 @@
 					<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
 						<div class="box-schedule " align="center" data-aos="zoom-in" data-aos-delay="1000">
 							<img src="assets/map.png" class="img-schedule">
-							<h5 class="mb-3 mt-4 title-schedule">Venue</h5>
+							<h5 class="mb-3 mt-4 title-schedule">Location</h5>
 							<p class="desc-schedule">
 								Lorem ipsum dolor sit amet
 								<address>
-								<a href="https://goo.gl/maps/bz6QJwAV7sHM23QGA" target="blank">
-									View Maps
-								</a>
+									<a href="https://goo.gl/maps/bz6QJwAV7sHM23QGA" target="blank">
+										View Maps
+									</a>
 								</address>
 							</p>
 						</div>
@@ -204,25 +220,25 @@
 					<h2>
 						TIME TO THE EVENT
 					</h2>
-					<h3>
+					<!-- <h3>
 						We’re Getting Married!
-					</h3>
+					</h3> -->
 					<div class="">
-					  <div id="countdown">
-					    <ul>
-					      <li><span id="days"></span>days</li>
-					      <li><span id="hours"></span>Hours</li>
-					      <li><span id="minutes"></span>Minutes</li>
-					      <li><span id="seconds"></span>Seconds</li>
-					    </ul>
-					  </div>
-					  <div class="message">
-					    <div id="content">
-					      <span class="emoji">🥳</span>
-					      <span class="emoji">🎉</span>
-					      <span class="emoji">🎂</span>
-					    </div>
-					  </div>
+						<div id="countdown">
+							<ul>
+								<li><span id="days"></span>days</li>
+								<li><span id="hours"></span>Hours</li>
+								<li><span id="minutes"></span>Minutes</li>
+								<li><span id="seconds"></span>Seconds</li>
+							</ul>
+						</div>
+						<div class="message">
+							<div id="content">
+								<span class="emoji">🥳</span>
+								<span class="emoji">🎉</span>
+								<span class="emoji">🎂</span>
+							</div>
+						</div>
 					</div>
 				</div>				
 			</div>
@@ -238,60 +254,60 @@
 
 			<div class="container  mt-5">
 
-					  <div class="mySlides">
-					    <div class="numbertext">1 / 6</div>
-					    <img src="assets/IMG-20201110-WA0024.jpg" style="width:100%">
-					  </div>
+				<div class="mySlides">
+					<div class="numbertext">1 / 6</div>
+					<img src="assets/IMG-20201110-WA0024.jpg" style="width:100%">
+				</div>
 
-					  <div class="mySlides">
-					    <div class="numbertext">2 / 6</div>
-					    <img src="assets/IMG-20201110-WA0022.jpg" style="width:100%">
-					  </div>
+				<div class="mySlides">
+					<div class="numbertext">2 / 6</div>
+					<img src="assets/IMG-20201110-WA0022.jpg" style="width:100%">
+				</div>
 
-					  <div class="mySlides">
-					    <div class="numbertext">3 / 6</div>
-					    <img src="assets/IMG-20201112-WA0008.jpg" style="width:100%">
-					  </div>
-					    
-					  <div class="mySlides">
-					    <div class="numbertext">4 / 6</div>
-					    <img src="assets/IMG-20201110-WA0017.jpg" style="width:100%">
-					  </div>
+				<div class="mySlides">
+					<div class="numbertext">3 / 6</div>
+					<img src="assets/IMG-20201112-WA0008.jpg" style="width:100%">
+				</div>
 
-					  <div class="mySlides">
-					    <div class="numbertext">5 / 6</div>
-					    <img src="assets/IMG-20201110-WA0022.jpg" style="width:100%">
-					  </div>
-					    
-					  <div class="mySlides">
-					    <div class="numbertext">6 / 6</div>
-					    <img src="assets/IMG-20201110-WA0024.jpg" style="width:100%">
-					  </div>
-					    
-					  <a class="prev" onclick="plusSlides(-1)">❮</a>
-					  <a class="next" onclick="plusSlides(1)">❯</a>
+				<div class="mySlides">
+					<div class="numbertext">4 / 6</div>
+					<img src="assets/IMG-20201110-WA0017.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">5 / 6</div>
+					<img src="assets/IMG-20201110-WA0022.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">6 / 6</div>
+					<img src="assets/IMG-20201110-WA0024.jpg" style="width:100%">
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">❮</a>
+				<a class="next" onclick="plusSlides(1)">❯</a>
 
 
-					<div class="row">
-					    <div class="column">
-					      	<img class="demo cursor" src="assets/IMG-20201110-WA0024.jpg" style="width:100%" onclick="currentSlide(1)" >
-					    </div>
-					    <div class="column">
-					      	<img class="demo cursor" src="assets/IMG-20201110-WA0022.jpg" style="width:100%" onclick="currentSlide(2)" >
-					    </div>
-					    <div class="column">
-					      	<img class="demo cursor" src="assets/IMG-20201112-WA0008.jpg" style="width:100%" onclick="currentSlide(3)" >
-					    </div>
-					    <div class="column">
-					      	<img class="demo cursor" src="assets/IMG-20201110-WA0017.jpg" style="width:100%" onclick="currentSlide(4)">
-					    </div>
-					    <div class="column">
-					      	<img class="demo cursor" src="assets/IMG-20201110-WA0022.jpg" style="width:100%" onclick="currentSlide(5)" >
-					    </div>    
-					    <div class="column">
-					      	<img class="demo cursor" src="assets/IMG-20201110-WA0024.jpg" style="width:100%" onclick="currentSlide(6)" >
-					    </div>
+				<div class="row">
+					<div class="column">
+						<img class="demo cursor" src="assets/IMG-20201110-WA0024.jpg" style="width:100%" onclick="currentSlide(1)" >
 					</div>
+					<div class="column">
+						<img class="demo cursor" src="assets/IMG-20201110-WA0022.jpg" style="width:100%" onclick="currentSlide(2)" >
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="assets/IMG-20201112-WA0008.jpg" style="width:100%" onclick="currentSlide(3)" >
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="assets/IMG-20201110-WA0017.jpg" style="width:100%" onclick="currentSlide(4)">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="assets/IMG-20201110-WA0022.jpg" style="width:100%" onclick="currentSlide(5)" >
+					</div>    
+					<div class="column">
+						<img class="demo cursor" src="assets/IMG-20201110-WA0024.jpg" style="width:100%" onclick="currentSlide(6)" >
+					</div>
+				</div>
 
 				
 			</div>
@@ -306,11 +322,11 @@
 					</h5>
 					<div class="body-card">
 						<button type="button" class="btn btn-modal" data-toggle="modal" data-target="#exampleModal">
-						  <i class="fas fa-home"></i> Kirim Kado
+							<i class="fas fa-home"></i> Kirim Kado
 						</button>
 
 						<a href="https://www.instagram.com/" type="button" class="btn btn-modal" d>
-						  <i class="fab fa-instagram"></i> Live
+							<i class="fab fa-instagram"></i> Live
 						</a>
 					</div>
 				</div>
@@ -319,28 +335,28 @@
 
 		<!-- Modal -->
 		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		  <div class="modal-dialog modal-lg modal-dialog-centered">
-		    <div class="modal-content">
-		      	<div class="modal-header">
-			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			          <span aria-hidden="true">&times;</span>
-			        </button>
-		      	</div>
-		      	<div class="modal-body">
-		        	<h1>Kirim Kado</h1>
-		        	<h5>
-		        		Jl Pojok Dua, Munggut, Wungu, Madiun, Jawa Timur<br>
-						08234324<br>
-						Penerima: Awanda
-		        	</h5>
-		        	<p>Silahkan copy Alamat Mempelai dibawah ini:</p>
-		        	<input type="text" value="Jl Pojok Dua, Munggut, Wungu, Madiun, Jawa Timur" id="myInput">
-					<button onclick="coptText()">Copy text</button>
-		      	</div>
-		    </div>
-		  </div>
+			<div class="modal-dialog modal-lg modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<h1>Kirim Kado</h1>
+						<h5>
+							Jl Pojok Dua, Munggut, Wungu, Madiun, Jawa Timur<br>
+							08234324<br>
+							Penerima: Awanda
+						</h5>
+						<p>Silahkan copy Alamat Mempelai dibawah ini:</p>
+						<input type="text" value="Jl Pojok Dua, Munggut, Wungu, Madiun, Jawa Timur" id="myInput">
+						<button onclick="coptText()">Copy text</button>
+					</div>
+				</div>
+			</div>
 		</div>
-			
+
 		<section id="protocol">
 			<div class="container">
 				<h4>Jangan ragu untuk datang, kami sudah berkoordinasi dengan semua pihak terkait pencegahan penularan COVID-19. Acara kami akan mengikuti segala prosedur protokol kesehatan untuk mencegah penularan COVID-19. So, don't be panic, we look forward to seeing you there!</h4>
@@ -425,6 +441,9 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
 	AOS.init();
+	$('.carousel').carousel({
+	    pause: "false"
+	});
 </script>
 </body>
 </html>

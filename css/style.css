@@ -103,6 +103,47 @@ html{
 .humberger-menu{
 	display: none;
 }
+/*========= Nav Mobile ==========*/
+#nav_mobile{
+		display: none;
+	}
+@media(max-width: 550px){
+	#nav_mobile{
+		display: block;
+	    position: fixed;
+	    width: 100%;
+	    bottom: 0;
+	    background-color: #f5f5f5;
+	    z-index: 1000;
+	}
+	#nav_mobile ul{
+		text-align: center;
+    	margin-left: -40px;
+    	height: 70px;
+	}
+	#nav_mobile ul li {
+		display: inline-block;
+		list-style: none;
+		padding-top: 47px;
+	}
+	#nav_mobile ul li a{
+		color: #111;
+		font-size: 0.9rem;
+		position: relative;
+		    color: #FFB6C1;
+	}
+	#nav_mobile ul li span{
+		position: absolute;
+	    top: 0;
+	    font-size: 24px;
+	    left: 50%;
+	    transform: translate(-50%, -91%);
+	}
+	#nav_mobile ul li a:hover{
+		color: #111;
+		text-decoration: none;
+	}
+}
 
 /*--------- Menu Humberger -------------*/
 .button_container {
@@ -457,7 +498,7 @@ html{
 	font-size: 32px;
 }
 .text-about p{
-	font-size: 24px;
+	font-size: 18px;
 }
 .countdown{
 	text-align: center;
@@ -811,6 +852,11 @@ html{
   	left: 50%;
   	transform: translate(-50%, -50%);
   }
+  @media(max-width: 550px){
+  	.scroll-downs {
+  		transform: translate(-50%, -70%);
+  	}  	
+  }
   .scroll-downs a{
   	color: #fff;
   }
@@ -852,7 +898,7 @@ html{
   		display: none;
   	}
   	.humberger-menu{
-  		display: block;
+  		display: none;
   	}
   	.button_container {
   		right: 20px;
@@ -893,7 +939,7 @@ html{
   		display: none;
   	}
   	.humberger-menu{
-  		display: block;
+  		display: none;
   	}
   	.button_container {
   		right: 20px;

@@ -111,10 +111,13 @@ html{
 	#nav_mobile{
 		display: block;
 	    position: fixed;
-	    width: 100%;
+	    width: 90%;
 	    bottom: 0;
 	    background-color: #f5f5f5;
 	    z-index: 1000;
+	    border-radius: 50px;
+	    left: 50%;
+	    transform: translate(-50%, -17%);
 	}
 	#nav_mobile ul{
 		text-align: center;
@@ -854,7 +857,7 @@ html{
   }
   @media(max-width: 550px){
   	.scroll-downs {
-  		transform: translate(-50%, -70%);
+  		transform: translate(-50%, -86%);
   	}  	
   }
   .scroll-downs a{

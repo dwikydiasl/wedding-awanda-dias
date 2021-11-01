@@ -27,14 +27,17 @@
 	<audio autoplay>
 		<source src="assets/music.mp4" type="audio/wav" AutoplayAllowed/>
 	</audio>
-	<div id="loading">
+	<div id="loading" class="loading">
 		<img src="assets/loading.png" class="img-loading">
-		<div id="myProgress">
+		<!-- <div id="myProgress">
 			<div id="myBar"></div>
-		</div>
-
+		</div> -->
+		<audio src="assets/music.mp4"></audio>
+		<button id="button"  onclick="hidden_page()">
+		  Open Invitation
+		</button>
 	</div>
-	<div id="landing-page">
+	<div id="landing-page" class="landing_page">
 		<div id="header" class="header">
 			<div class="container-fluid">
 				<nav>
@@ -411,7 +414,7 @@
 				</h4>
 			</div>
 		</section>	
-		
+
 
 		<section id="nav_mobile">
 			<div class="container">

@@ -14,23 +14,36 @@ function coptText() {
   /* Alert the copied text */
   alert("Copied the text: " + copyText.value);
 }
-//loading page
-function onReady(callback) {
-  var intervalID = window.setInterval(checkReady, 5000);
-  function checkReady() {
-    if (document.getElementsByTagName('body')[0] !== undefined) {
-      window.clearInterval(intervalID);
-      callback.call(this);
-    }
+
+function hidden_page() {
+  var x = document.getElementById("loading");
+  var y = document.getElementById("landing-page");
+  if (x.style.display === "none") {
+    y.style.display = "block";
+  } else {
+    y.style.display = "block";
   }
 }
-function show(id, value) {
-  document.getElementById(id).style.display = value ? 'block' : 'none';
-}
-onReady(function () {
-  show('landing-page', true);
-  show('loading', false);
-});
+
+
+
+//loading page
+// function onReady(callback) {
+//   var intervalID = window.setInterval(checkReady, 50000000);
+//   function checkReady() {
+//     if (document.getElementsByTagName('body')[0] !== undefined) {
+//       window.clearInterval(intervalID);
+//       callback.call(this);
+//     }
+//   }
+// }
+// function show(id, value) {
+//   document.getElementById(id).style.display = value ? 'block' : 'none';
+// }
+// onReady(function () {
+//   show('landing-page', true);
+//   show('loading', false);
+// });
 
 //top
 //Get the button
@@ -198,4 +211,24 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 };
+
+
+const button = document.querySelector("#button");
+const icon = document.querySelector("#button > i");
+const audio = document.querySelector("audio");
+
+button.addEventListener("click", () => {
+  if (audio.paused) {
+    audio.volume = 0.2;
+    audio.play();
+    icon.classList.remove('fa-volume-up');
+    icon.classList.add('fa-volume-mute');
+    
+  } else {
+    audio.pause();
+    icon.classList.remove('fa-volume-mute');
+    icon.classList.add('fa-volume-up');
+  }
+  button.classList.add("fade");
+});
 

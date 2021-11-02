@@ -922,8 +922,12 @@ button.btn.btn-modal:hover {
 		width: 100%;
 	}
 }
-
-
+.card-payment {
+    margin-bottom: 50px;
+}
+.card-payment img {
+    max-width: 150px;
+}
 .scroll-downs {
 	position: fixed;
 	bottom: 0;

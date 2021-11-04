@@ -1,8 +1,5 @@
 body{
 	font-family: 'Poppins', sans-serif !important;
-	/*font-family: 'Kaushan Script', cursive;
-	font-family: 'Raleway', sans-serif;
-	font-family: 'Sacramento', cursive;*/
 	overflow-x: hidden;
 }
 html{
@@ -19,7 +16,7 @@ audio {
 
 #loading button {
 	font-size: 16px;
-	color: #eee;
+	color: #fff;
 	position: absolute;
 	top: 80%;
 	left: 50%;
@@ -30,11 +27,11 @@ audio {
 	border-radius: 2px;
 	outline: none;
 	background: #FFB6C1;
-	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-	opacity: 0.8;
+	box-shadow: 2px 2px 4px rgb(0 0 0 / 40%);
 	cursor: pointer;
 	transition: all 0.4s ease-out;
 	z-index: 10000;
+	border-radius: 20px;
 }
 
 #loading button.fade:hover {
@@ -62,9 +59,14 @@ audio {
 	width: 100vw;
 	height: 100vh;
 	background-color:#fff;
-	/*background-image: url('../assets/Ellipsis-1.3s-230px.gif');*/
+	
 	background-repeat: no-repeat;
 	background-position: center;
+}
+@media(max-width: 600px){
+	#loading{
+		background-image: url('../assets/BG.png');
+	}	
 }
 #myProgress {
 	width: 20rem;
@@ -80,13 +82,31 @@ audio {
 	background-color: #111;
 }
 .img-loading{
-	height: 400px;
-	width: 500px;
-	position: fixed; 
-	top: 40%;
+	height: 300px;
+	width: 300px;
+	position: fixed;
+	top: 32%;
 	left: 50%;
 	z-index: 105;
 	transform: translate(-50%, -50%);
+	object-fit: cover;
+	border-radius: 100%;
+}
+@media(max-width: 600px){
+	.img-loading{
+		height: 200px;
+		width: 200px;
+	}
+}
+.text-loading{
+	top: 63%;
+	left: 50%;
+	z-index: 105;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	text-align: center;	
+    width: 100%;
+
 }
 /*====== HEADER ======*/
 #header{
@@ -721,11 +741,11 @@ audio {
 	}
 	.modal-body{
 		margin: 0 auto !important;
-	    position: absolute  !important;
-	    top: 50%  !important;
-	    left: 50%  !important;
-	    transform: translate(-50%, -50%)  !important;
-	    width: 100%  !important;
+		position: absolute  !important;
+		top: 50%  !important;
+		left: 50%  !important;
+		transform: translate(-50%, -50%)  !important;
+		width: 100%  !important;
 	}
 }
 
@@ -923,10 +943,10 @@ button.btn.btn-modal:hover {
 	}
 }
 .card-payment {
-    margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 .card-payment img {
-    max-width: 150px;
+	max-width: 150px;
 }
 .scroll-downs {
 	position: fixed;
@@ -937,32 +957,32 @@ button.btn.btn-modal:hover {
 }
 #confirmation{
 	background-color: #fff;
-    height: 100%;
-    padding: 80px 0;
-    position: relative;
-    z-index: 2;
-    text-align: center;
+	height: 100%;
+	padding: 80px 0;
+	position: relative;
+	z-index: 2;
+	text-align: center;
 }
 .box-confirm {
-    margin: 0 auto;
-    display: flex;
+	margin: 0 auto;
+	display: flex;
 }
 .box-confirm{
 	text-align: center;
 }
 .box-confirm iframe{
 	align-items: center;
-    align-content: center;
-    margin: 0 auto;
+	align-content: center;
+	margin: 0 auto;
 }
 body.freebirdFormviewerViewEmbedded .freebirdFormviewerViewNoPadding{
-	 display: none !important;
+	display: none !important;
 }
-body .freebirdFormviewerViewFormCard  .freebirdFormviewerViewNoPadding {
-    display: none !important;
+html body .freebirdFormviewerViewFormCard  .freebirdFormviewerViewNoPadding {
+	display: none !important;
 }
 body .freebirdFormviewerViewFooterFooterBarLeft {
-    display: none  !important;
+	display: none  !important;
 }
 @media(max-width: 550px){
 	.scroll-downs {
@@ -1017,7 +1037,7 @@ body .freebirdFormviewerViewFooterFooterBarLeft {
 	}
 	.img-loading{
 		height: 250px;
-		width: 300px;
+		width: 250px;
 	}
 	.page-home{
 		padding-top: 350px;

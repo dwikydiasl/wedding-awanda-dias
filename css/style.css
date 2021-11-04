@@ -13,12 +13,16 @@ html{
 audio {
 	display: none;
 }
+@font-face {
+	font-family: wedding;
+	src: url(../assets/welcome.ttf);
+}
 
 #loading button {
 	font-size: 16px;
 	color: #fff;
 	position: absolute;
-	top: 80%;
+	top: 87%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 200px;
@@ -26,7 +30,7 @@ audio {
 	border: none;
 	border-radius: 2px;
 	outline: none;
-	background: #FFB6C1;
+	background: #daab7f;
 	box-shadow: 2px 2px 4px rgb(0 0 0 / 40%);
 	cursor: pointer;
 	transition: all 0.4s ease-out;
@@ -59,29 +63,27 @@ audio {
 	width: 100vw;
 	height: 100vh;
 	background-color:#fff;
-	    background-size: cover;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 .img-load:before {
 	content: '';
 	position: absolute;
-	background-image: url(../assets/logo-loading.png);
-	width: 300px;
-	height: 300px;
+	background-image: url(../assets/photo.jpg);
+	width: 100%;
+	height: 100vh;
 	background-size: cover !important;
 	background-position: center;
 	background-repeat: no-repeat;
-	top: 32%;
-	left: 50%;
 	z-index: 105;
-	transform: translate(-50%, -50%);
+	filter: brightness(0.5);
 }
 
 
 @media(max-width: 600px){
 	#loading{
-		background-image: url('../assets/BG.png');
+		background-image: url('../assets/photo.jpg');
 	}	
 }
 #myProgress {
@@ -115,7 +117,7 @@ audio {
 	}
 }
 .text-loading{
-	top: 63%;
+	top: 70%;
 	left: 50%;
 	z-index: 105;
 	transform: translate(-50%, -50%);
@@ -123,6 +125,16 @@ audio {
 	text-align: center;	
 	width: 100%;
 
+}
+.text-loading p{
+	
+	color: #fff;
+}
+.text-loading h1{
+	color: #fff;
+	font-family: wedding;
+	font-size: 5.5rem;
+	margin-bottom: -28px;
 }
 /*====== HEADER ======*/
 #header{
@@ -162,7 +174,7 @@ audio {
 }
 .scrolled{
 	height: 65px;
-	background-color: #FFB6C1;
+	background-color: #daab7f;
 	transition: 0.7s;
 	color: #fff !important;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -206,7 +218,7 @@ audio {
 		color: #111;
 		font-size: 0.9rem;
 		position: relative;
-		color: #FFB6C1;
+		color: #daab7f;
 	}
 	#nav_mobile ul li span{
 		position: absolute;
@@ -378,7 +390,7 @@ audio {
 /*---------------------------*/
 
 .pink{
-	color: #FFB6C1;
+	color: #daab7f;
 }
 .white{
 	color:#fff;
@@ -443,7 +455,7 @@ audio {
 .title-section h1{
 	font-weight: 600;
 	font-size: 42px;
-	color: #FFB6C1;
+	color: #daab7f;
 	font-family: 'Raleway', sans-serif;
 }
 .line-section{
@@ -452,7 +464,7 @@ audio {
 	margin-bottom: 40px;
 	width: 75px;
 	height: 3px;
-	background: #FFB6C1;
+	background: #daab7f;
 }
 .page-schedule{
 	margin-top: 70px;
@@ -460,7 +472,7 @@ audio {
 .title-schedule{
 	font-weight: 500;
 	font-size: 28px;
-	color: #FFC0CB;
+	color: #daab7f;
 }
 .desc-schedule{
 	font-weight: 300px;
@@ -587,7 +599,7 @@ audio {
 .countdown h3{
 	font-family: 'Sacramento', cursive;
 	font-size: 5rem;
-	color: #FFB6C1;
+	color: #daab7f;
 }
 .countdown li {
 	display: inline-block;
@@ -595,7 +607,7 @@ audio {
 	list-style-type: none;
 	padding: 0.5em;
 	text-transform: uppercase;
-	background: #FFB6C1;
+	background: #daab7f;
 	color: #fff;
 	width: 10rem;
 	margin: 1rem;
@@ -830,10 +842,10 @@ audio {
 	margin-top: 20px;
 }
 .box-card{
-	background: #FFB6C1;
+	background: #daab7f;
 	border-radius: 5px;
 	box-shadow: 0 0 15px rgb(0 0 0 / 30%);
-	padding: 50px;
+	padding: 25px;
 }
 .box-card h5{
 	text-align: center;
@@ -997,7 +1009,7 @@ button.btn.btn-modal:hover {
 }
 @media(max-width: 600px){
 	.box-confirm iframe{
-		height: 1052px;
+		/*height: 1052px;*/
 	}
 }
 body.freebirdFormviewerViewEmbedded .freebirdFormviewerViewNoPadding{

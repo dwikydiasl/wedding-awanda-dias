@@ -993,7 +993,7 @@ button.btn.btn-modal:hover {
 }
 @media(max-width: 600px){
 	.box-confirm iframe{
-		height: 1200px;
+		height: 1052px;
 	}
 }
 body.freebirdFormviewerViewEmbedded .freebirdFormviewerViewNoPadding{

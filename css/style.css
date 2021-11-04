@@ -935,6 +935,35 @@ button.btn.btn-modal:hover {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+#confirmation{
+	background-color: #fff;
+    height: 100%;
+    padding: 80px 0;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+.box-confirm {
+    margin: 0 auto;
+    display: flex;
+}
+.box-confirm{
+	text-align: center;
+}
+.box-confirm iframe{
+	align-items: center;
+    align-content: center;
+    margin: 0 auto;
+}
+body.freebirdFormviewerViewEmbedded .freebirdFormviewerViewNoPadding{
+	 display: none !important;
+}
+body .freebirdFormviewerViewFormCard  .freebirdFormviewerViewNoPadding {
+    display: none !important;
+}
+body .freebirdFormviewerViewFooterFooterBarLeft {
+    display: none  !important;
+}
 @media(max-width: 550px){
 	.scroll-downs {
 		transform: translate(-50%, -86%);

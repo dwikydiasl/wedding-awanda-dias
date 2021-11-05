@@ -15,7 +15,7 @@ audio {
 }
 @font-face {
 	font-family: wedding;
-	src: url(../assets/welcome.ttf);
+	src: url(../assets/Playball-Regular.ttf);
 }
 
 #loading button {
@@ -74,12 +74,16 @@ audio {
 	width: 100%;
 	height: 100vh;
 	background-size: cover !important;
-	background-position: center;
+	background-position: bottom;
 	background-repeat: no-repeat;
 	z-index: 105;
-	filter: brightness(0.5);
+	filter: brightness(0.4);
 }
-
+@media(max-width: 600px){
+	.img-load:before{
+		background-size: auto !important;
+	}
+}
 
 #myProgress {
 	width: 20rem;
@@ -127,7 +131,7 @@ audio {
 }
 .text-loading h1{
 	color: #fff;
-	font-family: 'Patrick Hand', cursive !important;
+	font-family: wedding;
 }
 /*====== HEADER ======*/
 #header{
@@ -143,7 +147,7 @@ audio {
 .logo h1{
 	font-weight: 800;
 	color: #fff;
-	font-family: 'Sacramento', cursive;
+	font-family: wedding;
 	padding-top: 10px;
 }
 .header{
@@ -449,7 +453,7 @@ audio {
 	font-weight: 600;
 	font-size: 42px;
 	color: #daab7f;
-	font-family: 'Raleway', sans-serif;
+	font-family: wedding;
 }
 .line-section{
 	margin: auto;
@@ -467,8 +471,18 @@ audio {
 	font-size: 28px;
 	color: #daab7f;
 }
+@media(max-width: 600px){
+	.title-schedule{
+		font-size: 20px;
+	}
+}
 .desc-schedule{
 	font-weight: 300px;
+}
+@media(max-width: 600px){
+	.desc-schedule{
+		font-size: 14px;
+	}
 }
 .page-schedule address {
 	margin-top: -17px !important;
@@ -480,6 +494,12 @@ audio {
 .img-schedule{
 	height: 100px;
 	width: 100px;
+}
+@media(max-width: 600px){
+	.img-schedule{
+		height: 70px;
+		width: 70px;
+	}
 }
 .photo{
 	height: 200px;
@@ -494,6 +514,7 @@ audio {
 }
 .name2{
 	font-weight: 300;
+	font-size: 14px;
 }
 .snip1434 {
 	border: none;
@@ -587,7 +608,9 @@ audio {
 	margin: 50px 0;
 }
 .countdown h2{
-	font-family: "Raleway", Sans-serif;
+	font-size: 42px;
+	color: #daab7f;
+	font-family: wedding;
 }
 .countdown h3{
 	font-family: 'Sacramento', cursive;
@@ -844,6 +867,11 @@ audio {
 	text-align: center;
 	color: #fff;
 }
+@media(max-width: 600px){
+	.box-card h5{
+		font-size: 18px;
+	}
+}
 .modal-body{
 	text-align: center;
 	padding: 50px 0 !important;
@@ -988,6 +1016,10 @@ button.btn.btn-modal:hover {
 	background-repeat: no-repeat; /* Do not repeat the image */
 	background-size: cover;
 }
+#confirmation h1{
+	color: #daab7f;
+	font-family: wedding;
+}
 .box-confirm {
 	margin: 0 auto;
 	display: flex;
@@ -1004,9 +1036,6 @@ button.btn.btn-modal:hover {
 	.box-confirm iframe{
 		/*height: 1052px;*/
 	}
-}
-body.freebirdFormviewerViewEmbedded .freebirdFormviewerViewNoPadding{
-	display: none !important;
 }
 html body .freebirdFormviewerViewFormCard  .freebirdFormviewerViewNoPadding {
 	display: none !important;
@@ -1080,7 +1109,7 @@ body .freebirdFormviewerViewFooterFooterBarLeft {
 		line-height: 35px;
 	}
 	.title-section h1{
-		font-size: 28px;
+		font-size: 36px;
 
 	}
 	.box-schedule{
@@ -1117,7 +1146,7 @@ body .freebirdFormviewerViewFooterFooterBarLeft {
 		line-height: 35px;
 	}
 	.title-section h1{
-		font-size: 28px;
+		font-size: 36px;
 	}
 	.box-schedule{
 		margin-bottom: 30px;

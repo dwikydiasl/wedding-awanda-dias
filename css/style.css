@@ -1050,6 +1050,34 @@ body .freebirdFormviewerViewFooterFooterBarLeft {
 form#mG61Hd .freebirdFormviewerViewFooterFooterBarLeft{
 display: none  !important;
 }
+.fomr-confirm{
+	max-width: 500px;
+    margin: 0 auto;
+    background: #f5f5f5;
+    padding: 50px;
+}
+.fomr-confirm button{
+	    background: #daab7f;
+    box-shadow: 2px 2px 4px rgb(0 0 0 / 40%);
+    outline: 0;
+    border: 0;
+    color: #fff;
+    width: 100px;
+    padding: 10px;
+}
+.form-row{
+	display: grid !important; 
+	margin-bottom: 25px;
+}
+.title-form{
+	text-align: left;
+}
+.form-row label{
+	text-align: left;
+}
+.radio-btn{
+	margin-bottom: -10px;
+}
 @media(max-width: 550px){
 	.scroll-downs {
 		transform: translate(-50%, -86%);

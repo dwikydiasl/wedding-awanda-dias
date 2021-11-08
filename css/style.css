@@ -1065,6 +1065,13 @@ display: none  !important;
     width: 100px;
     padding: 10px;
 }
+.form-row textarea{
+	width: 100%;
+}
+.note{
+	text-align: left;
+	font-size: 14px;
+}
 .form-row{
 	display: grid !important; 
 	margin-bottom: 25px;

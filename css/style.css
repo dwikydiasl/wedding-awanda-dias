@@ -867,7 +867,7 @@ audio {
 	box-shadow: 0 4px 30px rgb(0 0 0 / 50%);
 	padding: 25px;
 }
-.box-card h5{
+.box-card p{
 	text-align: center;
 	color: #fff;
 }
@@ -1046,6 +1046,9 @@ html body .freebirdFormviewerViewFormCard  .freebirdFormviewerViewNoPadding {
 }
 body .freebirdFormviewerViewFooterFooterBarLeft {
 	display: none  !important;
+}
+form#mG61Hd .freebirdFormviewerViewFooterFooterBarLeft{
+display: none  !important;
 }
 @media(max-width: 550px){
 	.scroll-downs {

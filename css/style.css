@@ -70,18 +70,19 @@ audio {
 .img-load:before {
 	content: '';
 	position: absolute;
-	background-image: url(../assets/photo.jpg);
+	background-image: url(../assets/bg-load-2.png);
 	width: 100%;
 	height: 100vh;
 	background-size: cover !important;
 	background-position: bottom;
 	background-repeat: no-repeat;
 	z-index: 105;
-	filter: brightness(0.4);
+	/*filter: brightness(0.4);*/
 }
 @media(max-width: 600px){
 	.img-load:before{
-		background-size: auto !important;
+		/*background-size: auto !important;*/
+		background-image: url(../assets/bg-load.png);
 	}
 }
 
@@ -131,11 +132,12 @@ audio {
 }
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 .text-loading p{	
-	color: #fff;
+	color: #D28055;
 }
 .text-loading h1{
-	color: #fff;
+	color: #D28055;
 	font-family: wedding;
+	font-weight: 600;
 }
 /*====== HEADER ======*/
 #header{
@@ -853,7 +855,6 @@ audio {
 #information{
 	background-color: #fff;
 	height: 100%;
-	padding: 80px 0;
 	position: relative;
 	z-index: 2;
 }
@@ -862,14 +863,13 @@ audio {
 	margin-top: 20px;
 }
 .box-card{
-	background: #daab7f;
+	background: #FFF9F4;
 	border-radius: 5px;
-	box-shadow: 0 4px 30px rgb(0 0 0 / 50%);
 	padding: 25px;
 }
 .box-card p{
 	text-align: center;
-	color: #fff;
+	color: #111;
 }
 @media(max-width: 600px){
 	.box-card h5{
@@ -1053,15 +1053,17 @@ display: none  !important;
 .fomr-confirm{
 	max-width: 500px;
     margin: 0 auto;
-    background: #f5f5f5;
     padding: 50px;
+    background: #daab7f;
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 50%)
 }
 .fomr-confirm button{
-	    background: #daab7f;
+	    background: #fff;
     box-shadow: 2px 2px 4px rgb(0 0 0 / 40%);
     outline: 0;
     border: 0;
-    color: #fff;
+    color: #111;
     width: 100px;
     padding: 10px;
 }
@@ -1081,6 +1083,11 @@ display: none  !important;
 }
 .form-row label{
 	text-align: left;
+	color: #fff;
+}
+.form-row span{
+	text-align: left;
+	color: #fff;
 }
 .radio-btn{
 	margin-bottom: -10px;

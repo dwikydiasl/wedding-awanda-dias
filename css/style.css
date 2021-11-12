@@ -1058,6 +1058,7 @@ button.btn.btn-modal:hover {
 	width: 100px;
 	padding: 10px;
 	border-radius: 10px;
+	text-transform: uppercase;
 }
 .form-row textarea{
 	width: 100%;

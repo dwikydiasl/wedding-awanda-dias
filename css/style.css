@@ -871,6 +871,11 @@ audio {
 	text-align: center;
 	color: #111;
 }
+.box-card h1{
+	font-family: wedding;
+	text-align: center;
+	font-size: 2.2rem;
+}
 @media(max-width: 600px){
 	.box-card h5{
 		font-size: 18px;

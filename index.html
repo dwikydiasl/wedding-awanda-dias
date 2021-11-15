@@ -427,40 +427,47 @@
 				Reservasi dan Ucapan 
 			</h1>
 			<div class="container">
-					<div class="fomr-confirm">
-						<script type="text/javascript">var submitted=false;</script>   
-						<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='https://diaslaksmana.com/wedding-awanda-dias/';}"  width="640" height="1000" frameborder="0" marginheight="0" marginwidth="0">Memuat…</iframe>
-						<form  action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd8SFm2buO6rj8TstQTbboKMSl8VDs9WxMLOGaGoPCl1gosjA/formResponse"  method="post" target="hidden_iframe"
-						onsubmit="submitted=true;">
+					
+				<div class="alert d-none alert-success alert-dismissible fade show" role="alert">
+					<strong>Terima Kasih</strong> Pesan anda telah terkirim.
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="fomr-confirm">
+
+					<form name="submit-to-google-sheet">
 						<div class="form-row">
 							<label class="title-form">Nama *</label>
-							<input name="entry.1647504127" type="text" required="" />
+							<input name="name" type="text" required="" />
 						</div>
 
 						<div class="form-row">
 							<label class="title-form">Berikan Ucapan dan Doa</label>
-							<textarea name="entry.309116259" type="text" required="" rows="3"  /></textarea>
+							<textarea name="ucapan" type="text" required="" rows="3"  /></textarea>
 						</div>
 
 						<div class="form-row">
 							<label class="title-form">Konfirmasi Kehadiran *</label>
 							<label for="Hadir" class="radio-btn">															 
-								<input type="radio" name="entry.650955443" id="Hadir"  value="Hadir" required="">
+								<input type="radio" name="konfirmasi" id="Hadir"  value="Hadir" required="">
 								<span>Hadir</span>		
 							</label><br>
 							<label for="Tidak Hadir" class="radio-btn">																 
-								<input type="radio" name="entry.650955443" id="Tidak Hadir"  value="Tidak Hadir" required="">
+								<input type="radio" name="konfirmasi" id="Tidak Hadir"  value="Tidak Hadir" required="">
 								<span>Tidak Hadir</span>	
 							</label>
 						</div>
 						<div class="form-row">
 							<label class="title-form">Jumlah yang akan hadir</label>
 							<span class="" style="text-align: left;    font-size: 12px;">Isi jika menghadiri acara</span>
-							<input name="entry.88397802" type="number" min="0"   />
+							<input name="jumlah" type="number" min="0"   />
 						</div>
-						<button type="submit" value="Send" /> Kirim</button> 
-
-					</form>
+						<button class="btn-send" type="submit" value="Send" /> Kirim</button> 
+						<button class="btn  btn-loading d-none" type="button" disabled>
+						  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+						  Loading...
+						</button>
 				</div>
 
 				</section>
@@ -534,6 +541,40 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbworCLA4FaCD6ThSO3qMZCNluPVcWkHlE8ITYljs-abMyZpLEnzh0G_MwcqvGTh6jFa/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const btnSend = document.querySelector('.btn-send');
+  const btnLoading = document.querySelector('.btn-loading');
+  const myAlert = document.querySelector('.alert');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    //tampilkan tombol loading, hilangkan tombol kirim
+    btnLoading.classList.toggle('d-none');
+	btnSend.classList.toggle('d-none');
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+     	 //tampilkan tombol kirim, hilangkan tombol loading
+		    btnLoading.classList.toggle('d-none');
+			btnSend.classList.toggle('d-none');
+
+			//tampilkan alert
+			myAlert.classList.toggle('d-none');
+
+			//reset form
+
+			form.reset();
+
+      	console.log('Success!', response)
+
+  		})
+      .catch(error => console.error('Error!', error.message))
+  });
+</script>
+
 <script src="js/script.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
